@@ -1,5 +1,7 @@
 var home_Path = document.location.protocol +'//' + window.document.location.hostname +'/';
 
+var talkAPI = 'http://api.qingyunke.com/api.php?key=free&appid=0';
+
 var userAgent = window.navigator.userAgent.toLowerCase();
 console.log(userAgent);
 var norunAI = [ "android", "iphone", "ipod", "ipad", "windows phone", "mqqbrowser" ,"msie","trident/7.0"];
@@ -285,13 +287,28 @@ if(!norunFlag){
 					return;
 				}
 				showMessage('思考中~', 0);
-				$.ajax({
-					type: 'POST',
-					url: talkAPI,
+				
+				
+				
+// 				$.ajax({
+// 					type: 'POST',
+// 					url: talkAPI,
+// 					data: {
+// 						"info":info_,
+// 						"userid":userid_
+// 					},
+					
+					
+			       $.ajax({
+					type: 'GET',
+					url: 'http://api.qingyunke.com/api.php?key=free&appid=0',
 					data: {
 						"info":info_,
 						"userid":userid_
-					},
+					},		
+					
+					
+					
 					success: function(res) {
 						if(res.code !== 100000){
 							talkValTimer();
