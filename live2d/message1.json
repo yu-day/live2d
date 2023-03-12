@@ -1,0 +1,38 @@
+{
+    "mouseover": [
+        {
+            "selector": "#showInfoBtn",
+            "text": ["View the latest complaints and site information"]
+        },
+		{
+            "selector": "#showTalkBtn",
+            "text": ["Want to chat with me?"]
+        },
+		{
+            "selector": "#hideButton",
+            "text": ["Hide Eastvar, I hope we can meet again after hiding!"]
+        },
+		{
+            "selector": "#musicButton",
+            "text": ["Want to add some music to the page?"]
+        },
+        {
+            "selector": "#youduButton",
+            "text": ["The button is poisonous, do not open it for epilepsy patients! ! ! <br>Click to open, click again to close."]
+        },
+		{
+            "selector": ".itemarticle-tips a",
+            "text": ["Want to see {text}?"]
+        },
+        {
+            "selector": ".searchbox",
+            "text": ["What are you looking for, need help?"]
+        }
+    ],
+    "click": [
+        {
+            "selector": "#landlord #live2d",
+            "text": ["Don't touch your hands! Take your hands away~~", "It's really shameless! ","Hentai! ", "If I touch it again, I will call the police! ", "Hey, hey, there is a pervert here!"]
+        }
+    ]
+}
