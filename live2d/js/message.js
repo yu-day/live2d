@@ -1,6 +1,6 @@
 var home_Path = document.location.protocol +'//' + window.document.location.hostname +'/';
 
-var talkAPI = 'http://api.qingyunke.com/api.php?key=free&appid=0';
+var talkAPI = 'https://api.qingyunke.com/api.php?key=free&appid=0';
 
 var userAgent = window.navigator.userAgent.toLowerCase();
 console.log(userAgent);
@@ -301,7 +301,7 @@ if(!norunFlag){
 					
 			       $.ajax({
 					type: 'GET',
-					url: 'http://api.qingyunke.com/api.php?key=free&appid=0',
+					url: talkAPI,
 					data: {
 						"info":info_,
 						"userid":userid_
